@@ -5,7 +5,7 @@ import {
   getQueriesForElement,
   prettyDOM,
   configure as configureDTL,
-} from '@testing-library/dom'
+} from '@ngard/dom'
 import act, {
   getIsReactActEnvironment,
   setReactActEnvironment,
@@ -69,7 +69,7 @@ function createConcurrentRoot(
       /* istanbul ignore if */
       if (!hydrate) {
         throw new Error(
-          'Attempted to hydrate a non-hydrateable root. This is a bug in `@testing-library/react`.',
+          'Attempted to hydrate a non-hydrateable root. This is a bug in `@ngard/react`.',
         )
       }
       // Nothing to do since hydration happens when creating the root object.
@@ -247,7 +247,7 @@ function renderHook(renderCallback, options = {}) {
 }
 
 // just re-export everything from dom-testing-library
-export * from '@testing-library/dom'
+export * from '@ngard/dom'
 export {render, renderHook, cleanup, act, fireEvent}
 
 /* eslint func-name-matching:0 */

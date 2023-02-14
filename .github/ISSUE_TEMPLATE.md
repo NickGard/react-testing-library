@@ -42,7 +42,7 @@ tutorial to learn how: http://kcd.im/pull-request
 
 -->
 
-- `@testing-library/react` version:
+- `@ngard/react` version:
 - Testing Framework and version:
   <!-- are you using jest, mocha, puppeteer, ava? And what version? -->
 - DOM Environment:

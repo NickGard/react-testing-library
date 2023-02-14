@@ -1,15 +1,10 @@
 // TypeScript Version: 3.8
 
-import {
-  queries,
-  Queries,
-  BoundFunction,
-  prettyFormat,
-} from '@testing-library/dom'
+import {queries, Queries, BoundFunction, prettyFormat} from '@ngard/dom'
 import {Renderer} from 'react-dom'
 import {act as reactAct} from 'react-dom/test-utils'
 
-export * from '@testing-library/dom'
+export * from '@ngard/dom'
 
 export type RenderResult<
   Q extends Queries = typeof queries,

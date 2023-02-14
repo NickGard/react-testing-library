@@ -1,4 +1,4 @@
-import {fireEvent as dtlFireEvent} from '@testing-library/dom'
+import {fireEvent as dtlFireEvent} from '@ngard/dom'
 
 // react-testing-library's version of fireEvent will call
 // dom-testing-library's version of fireEvent. The reason

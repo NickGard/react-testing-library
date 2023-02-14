@@ -1,6 +1,6 @@
 {
   "name": "@ngard/react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple and complete React DOM testing utilities that encourage good testing practices.",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
@@ -46,11 +46,11 @@
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.12.5",
-    "@ngard/dom": "^0.0.1",
+    "@ngard/dom": "^0.0.2",
     "@types/react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@ngard/jest-dom": "^0.0.1",
+    "@ngard/jest-dom": "^0.0.2",
     "chalk": "^4.1.2",
     "dotenv-cli": "^4.0.0",
     "jest-diff": "^27.5.1",

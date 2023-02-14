@@ -100,7 +100,7 @@ This module is distributed via [npm][npm] which is bundled with [node][node] and
 should be installed as one of your project's `devDependencies`:
 
 ```
-npm install --save-dev @testing-library/react
+npm install --save-dev @ngard/react
 ```
 
 or
@@ -108,7 +108,7 @@ or
 for installation via [yarn][yarn]
 
 ```
-yarn add --dev @testing-library/react
+yarn add --dev @ngard/react
 ```
 
 This library has `peerDependencies` listings for `react` and `react-dom`.
@@ -117,14 +117,14 @@ _React Testing Library versions 13+ require React v18. If your project uses an
 older version of React, be sure to install version 12:_
 
 ```
-npm install --save-dev @testing-library/react@12
+npm install --save-dev @ngard/react@12
 
 
-yarn add --dev @testing-library/react@12
+yarn add --dev @ngard/react@12
 ```
 
-You may also be interested in installing `@testing-library/jest-dom` so you can
-use [the custom jest matchers](https://github.com/testing-library/jest-dom).
+You may also be interested in installing `@ngard/jest-dom` so you can use
+[the custom jest matchers](https://github.com/testing-library/jest-dom).
 
 > [**Docs**](https://testing-library.com/react)
 
@@ -192,11 +192,11 @@ export default HiddenMessage
 // __tests__/hidden-message.js
 // these imports are something you'd normally configure Jest to import for you
 // automatically. Learn more in the setup docs: https://testing-library.com/docs/react-testing-library/setup#cleanup
-import '@testing-library/jest-dom'
+import '@ngard/jest-dom'
 // NOTE: jest-dom adds handy assertions to Jest and is recommended, but not required
 
 import * as React from 'react'
-import {render, fireEvent, screen} from '@testing-library/react'
+import {render, fireEvent, screen} from '@ngard/react'
 import HiddenMessage from '../hidden-message'
 
 test('shows the children when the checkbox is checked', () => {
@@ -284,13 +284,13 @@ export default Login
 // __tests__/login.js
 // again, these first two imports are something you'd normally handle in
 // your testing framework configuration rather than importing them in every file.
-import '@testing-library/jest-dom'
+import '@ngard/jest-dom'
 import * as React from 'react'
 // import API mocking utilities from Mock Service Worker.
 import {rest} from 'msw'
 import {setupServer} from 'msw/node'
 // import testing utilities
-import {render, fireEvent, screen} from '@testing-library/react'
+import {render, fireEvent, screen} from '@ngard/react'
 import Login from '../login'
 
 const fakeUserResponse = {token: 'fake_user_token'}
@@ -658,11 +658,11 @@ Contributions of any kind welcome!
 [build]: https://github.com/testing-library/react-testing-library/actions?query=workflow%3Avalidate
 [coverage-badge]: https://img.shields.io/codecov/c/github/testing-library/react-testing-library.svg?style=flat-square
 [coverage]: https://codecov.io/github/testing-library/react-testing-library
-[version-badge]: https://img.shields.io/npm/v/@testing-library/react.svg?style=flat-square
-[package]: https://www.npmjs.com/package/@testing-library/react
-[downloads-badge]: https://img.shields.io/npm/dm/@testing-library/react.svg?style=flat-square
-[npmtrends]: http://www.npmtrends.com/@testing-library/react
-[license-badge]: https://img.shields.io/npm/l/@testing-library/react.svg?style=flat-square
+[version-badge]: https://img.shields.io/npm/v/@ngard/react.svg?style=flat-square
+[package]: https://www.npmjs.com/package/@ngard/react
+[downloads-badge]: https://img.shields.io/npm/dm/@ngard/react.svg?style=flat-square
+[npmtrends]: http://www.npmtrends.com/@ngard/react
+[license-badge]: https://img.shields.io/npm/l/@ngard/react.svg?style=flat-square
 [license]: https://github.com/testing-library/react-testing-library/blob/main/LICENSE
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [prs]: http://makeapullrequest.com
